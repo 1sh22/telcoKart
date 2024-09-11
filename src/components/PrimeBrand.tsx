@@ -1,6 +1,6 @@
-import { useEffect } from "react";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import Image from "next/image";
+import * as React from "react";
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -8,8 +8,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import useEmblaCarousel from "embla-carousel-react";
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { Button } from "./ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
@@ -19,11 +19,9 @@ const images = [
   { id: 4, src: "/images/Trending/dol.jpg", title: "Doll" },
   { id: 5, src: "/images/Trending/pens.jpg", title: "Pens" },
 ];
-
-// Duplicate and limit array for sufficient items
 const extendedImages = [...images, ...images].slice(0, 8);
 
-export default function Component() {
+export default function PrimeBrand() {
   return (
     <div className="w-full p-6 space-y-6">
       <h2 className="text-2xl font-bold mb-4">Apple for Business</h2>

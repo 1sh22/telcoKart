@@ -1,42 +1,47 @@
 'use client';
-import BrandCerti from '@/components/BrandCerti';
-import Events from '@/components/Events';
-import Footer from '@/components/Footer'
-import MainCategory from '@/components/MainCategory';
-import Nav from '@/components/Nav'
-import PopularSat from '@/components/PopularSat';
-import PrimeBrand from '@/components/PrimeBrand';
-import Show from '@/components/Show';
-import Softwarecard from '@/components/Softwarecard';
-import Subscribe from '@/components/Subscribe';
-import Whatsapp from '@/components/Whatsapp';
-import { Satellite } from 'lucide-react';
+import BrandCerti from "@/components/BrandCerti";
+import Events from "@/components/Events";
+import Footer from "@/components/Footer";
+import MainCategory from "@/components/MainCategory";
+import Nav  from "@/components/Nav";
+import PopularSat from "@/components/PopularSat";
+import AppleForBusiness from "@/components/AppleForBusiness";
+import Show from "@/components/Show";
+import Softwarecard from "@/components/Softwarecard";
+import Subscribe from "@/components/Subscribe";
+import Whatsapp from "@/components/Whatsapp";
+import { Satellite } from "lucide-react";
 
-import React from 'react'
+import React from "react";
+import PrimeBrand from "@/components/PrimeBrand";
 
 function page() {
+<<<<<<< HEAD
   const images = [
     "/images/caro1.webp",
     "/images/caro2.webp",
   ];
+=======
+  const images = ["/images/slider.png", "/images/cctv.jpg"];
+>>>>>>> a295b8214f905475f6da43532c9759e7f9d705f8
   return (
     <>
       <Nav />
       <MainCategory />
       <Show images={images} />
-      <PrimeBrand />
+      <AppleForBusiness />
       <PopularSat />
-      <PrimeBrand />
+      <AppleForBusiness />
       <BrandCerti />
-      <Softwarecard />
+      {/* <Softwarecard /> */}
       <Show images={images} />
       <Whatsapp />
       <Events />
-      {/* <PrimeBrand /> */}
+      <PrimeBrand />
       <Subscribe />
       <Footer />
     </>
   );
 }
 
-export default page
+export default page;
