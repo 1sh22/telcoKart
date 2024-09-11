@@ -16,8 +16,8 @@ import React from 'react'
 
 function page() {
   const images = [
-    "/images/slider.png",
-    "/images/cctv.jpg",
+    "/images/caro1.webp",
+    "/images/caro2.webp",
   ];
   return (
     <>
