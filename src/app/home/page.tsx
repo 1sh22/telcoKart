@@ -16,14 +16,14 @@ import React from "react";
 import PrimeBrand from "@/components/PrimeBrand";
 
 function page() {
-<<<<<<< HEAD
+
   const images = [
     "/images/caro1.webp",
     "/images/caro2.webp",
   ];
-=======
+
   const images = ["/images/slider.png", "/images/cctv.jpg"];
->>>>>>> a295b8214f905475f6da43532c9759e7f9d705f8
+
   return (
     <>
       <Nav />
